@@ -27,13 +27,6 @@ for rule in chatbot_data['rule']:
 
 app = Flask(__name__)
 
-path = 'D:/chatbot201_21Capstone'
-'''
-chatbot201 = chatbot201Api (
-    path = path
-)
-'''
-#@chatbot201.app.route('/')
 @app.route('/')
 def index():
     return render_template("index.html")
